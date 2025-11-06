@@ -6,3 +6,4 @@ def pnnb(n, b=1):
 
 n = int(input())
 pnnb(n)
+
