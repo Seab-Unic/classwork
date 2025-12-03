@@ -1,13 +1,4 @@
-def fib(n):
-    if n <= 0:
-        return []
-    if n == 1:
-        return [0]
-    if n == 2:
-        return [0, 1]
-    fib_s = fib(n - 1)
-    fib_s.append(fib_s[-1] + fib_s[-2])
-    return fib_s
-
-n = int(input())
-print(fib(n))
+import random
+n = random.randint(5,15)
+d = {i: "even" if i % 2 == 0 else "odd" for i in range(1, n + 1)}
+print(d)
